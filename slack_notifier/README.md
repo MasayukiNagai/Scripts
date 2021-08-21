@@ -13,5 +13,3 @@ else
   echo "Your job was successfully done." | slack_webhook.sh
 fi
 ```
-## Reference
-http://vdeep.net/shellscript-slack
