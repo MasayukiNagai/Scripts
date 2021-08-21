@@ -17,12 +17,7 @@ fi
 
 # URL of WEBHOOK
 URL='WEBHOOK_URL'
-# Channel that you want to send the msg to
-CHANNEL=${CHANNEL:-'#CHANNEL_NAME'}
-# Name of your bot
-BOTNAME=${BOTNAME:-'BOT_NAME'}
-# Emoji
-EMOJI=${EMOJI:-':new_moon_with_face:'}
+
 # Title
 HEAD=${HEAD:-"[TITLE]\n"}
 
@@ -31,9 +26,6 @@ MESSAGE='```'`cat ${MSGFILE}`'```'
 
 # Covert everything in the json format
 payload="payload={
-    \"channel\": \"${CHANNEL}\",
-    \"username\": \"${BOTNAME}\",
-    \"icon_emoji\": \"${EMOJI}\",
     \"text\": \"${HEAD}${MESSAGE}\"
 }"
 
