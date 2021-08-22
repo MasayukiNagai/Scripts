@@ -188,3 +188,6 @@ cython_debug/
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode,python
+
+slack_test.sh
+slack_test2.sh
