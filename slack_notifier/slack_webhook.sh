@@ -16,7 +16,7 @@ else
 fi
 
 # URL of WEBHOOK
-URL='WEBHOOK_URL'
+URL=${WEBHOOK_URL}
 
 # Title
 HEAD=${HEAD:-"[TITLE]\n"}
