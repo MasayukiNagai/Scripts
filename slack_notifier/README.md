@@ -3,9 +3,9 @@ Sends notification to slack when a process is done.
 
 ## Preparation
 
-Go to https://api.slack.com/apps and *Activate Incoming Webhooks*. Then, generate **Webhook URL**.
+Go to https://api.slack.com/apps and *Create New App*. Then, go to *Incoming Webhooks* in settings and turn on *Activate Incoming Webhooks*. Finally, generate **Webhook URL** from *Add New Webhook to Workspace*.
 
-To use the webhook url, you can either 
+To use the webhook URL you just generated, you can either 
 
 1. Set an enviroment variable (in, for example, .bash_profile or .zprofile)
 
