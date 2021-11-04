@@ -1,7 +1,9 @@
 import argparse
+import subprocess
 import os
 import sys
 import logging
+
 
 def argument_parser():
     arg_parser = argparse.ArgumentParser()
@@ -53,3 +55,20 @@ def setup_logger(name, logfile):
     logger.addHandler(sh)
     return logger
 
+
+def execute_cmd(cmd, cwd=None):
+    s = ''
+    proc = subprocess.Popen(cmd, shell=True, cwd=cwd,
+                            text=True,
+                            stdout=subprocess.PIPE,
+                            stderr=subprocess.STDOUT)
+    while proc.poll() is None:
+        line = proc.stdout.readline().strip()
+        s += line + '\n'
+        print(line)
+    line = proc.stdout.read().strip()
+    s += line + '\n'
+    print(line)
+    if proc.returncode != 0:
+        raise subprocess.CalledProcessError(proc.returncode, cmd)
+    return s
