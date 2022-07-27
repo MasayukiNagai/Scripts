@@ -191,3 +191,4 @@ cython_debug/
 
 slack_test.sh
 slack_test2.sh
+Chimera/data/
