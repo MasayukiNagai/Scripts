@@ -15,7 +15,7 @@ else
 fi
 
 end=`date +%s`
-runtime=$((end-start))
+run_time=$((end-start))
 min=$((run_time / 60))
 sec=$((run_time % 60))
 
