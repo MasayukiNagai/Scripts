@@ -1,10 +1,10 @@
 #!/bin/bash
 
-COMMAND=$1
+COMMAND="$@"
 
-HOST=`hostname`
-DATE=`date`
-start=`date +%s`
+HOST=$(hostname)
+DATE=$(date '+%Y-%m-%d %H:%M:%S %Z')
+start=$(date +%s
 
 $COMMAND
 
@@ -14,7 +14,7 @@ else
   job_msg="Your job was successfully done."
 fi
 
-end=`date +%s`
+end=$(date +%s)
 run_time=$((end-start))
 min=$((run_time / 60))
 sec=$((run_time % 60))
