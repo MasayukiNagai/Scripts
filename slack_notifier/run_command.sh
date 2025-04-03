@@ -4,7 +4,7 @@ COMMAND="$@"
 
 HOST=$(hostname)
 DATE=$(date '+%Y-%m-%d %H:%M:%S %Z')
-start=$(date +%s
+start=$(date +%s)
 
 $COMMAND
 
