@@ -3,6 +3,7 @@
 Grab‑bag of small utilities and helper scripts I use across projects. Each folder is self contained:
 
 - `chimera` — convert ChimeraX `.chimerax` sessions into `.cxc` command scripts.
+- `genomics` - dna_utils handling onehot and strings.
 - `shell` — simple job-throwing examples (with `screen`) plus test harness.
 - `slack_notifier` — Slack webhook helpers to alert when long jobs finish; see `slack_notifier/README.md`.
 - `STAR` — bash helpers for building STAR genome indices and running paired-end alignments.
